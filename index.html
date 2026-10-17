@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Real Scripture Path Inc. — We Build Apps That Matter</title>
+<meta name="description" content="Real Scripture Path Inc. is a professional app studio. We design, build, and launch iPhone apps — for our own portfolio and for clients.">
+<style>
+  :root { --cream:#FAF7F2; --ink:#2B2620; --terra:#b3402a; --sage:#5B8A72; --gold:#C9A227; --muted:#6B6259; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; background:var(--cream); color:var(--ink); line-height:1.7; }
+  h1,h2,h3 { font-family:Georgia,'Times New Roman',serif; line-height:1.25; }
+  .wrap { max-width:1080px; margin:0 auto; padding:0 24px; }
+  header { padding:26px 0; display:flex; justify-content:space-between; align-items:center; }
+  .logo { font-family:Georgia,serif; font-size:1.35rem; font-weight:700; color:var(--ink); text-decoration:none; }
+  .logo span { color:var(--terra); }
+  nav a { margin-left:26px; text-decoration:none; color:var(--muted); font-weight:500; font-size:.96rem; }
+  nav a:hover { color:var(--terra); }
+  .hero { text-align:center; padding:84px 24px 64px; }
+  .hero .kicker { text-transform:uppercase; letter-spacing:3px; font-size:.78rem; color:var(--terra); font-weight:700; margin-bottom:18px; }
+  .hero h1 { font-size:3rem; margin-bottom:20px; }
+  .hero h1 em { color:var(--terra); font-style:normal; }
+  .hero p { font-size:1.18rem; color:var(--muted); max-width:640px; margin:0 auto 34px; }
+  .btn { display:inline-block; background:var(--terra); color:#fff; padding:15px 38px; border-radius:999px; text-decoration:none; font-weight:600; font-size:1.05rem; border:none; cursor:pointer; }
+  .btn:hover { opacity:.92; }
+  .btn.ghost { background:transparent; color:var(--terra); border:2px solid var(--terra); margin-left:12px; }
+  section { padding:64px 0; }
+  section h2 { font-size:2.1rem; text-align:center; margin-bottom:14px; }
+  .sub { text-align:center; color:var(--muted); max-width:620px; margin:0 auto 46px; font-size:1.06rem; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:26px; }
+  .card { background:#fff; border-radius:18px; padding:34px 28px; box-shadow:0 6px 24px rgba(43,38,32,.07); }
+  .card .tag { display:inline-block; font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; padding:5px 12px; border-radius:999px; margin-bottom:14px; }
+  .tag.live { background:#E8F3EC; color:var(--sage); }
+  .tag.soon { background:#FDF3E3; color:#B07C1F; }
+  .tag.build { background:#FBEDEA; color:var(--terra); }
+  .card h3 { font-size:1.35rem; margin-bottom:10px; }
+  .card p { color:var(--muted); font-size:.97rem; }
+  .price-card { text-align:center; }
+  .price-card .price { font-family:Georgia,serif; font-size:2.4rem; color:var(--terra); margin:12px 0 4px; }
+  .price-card .per { color:var(--muted); font-size:.88rem; margin-bottom:18px; }
+  .price-card ul { list-style:none; text-align:left; margin:0 0 24px; }
+  .price-card li { padding:8px 0; border-bottom:1px solid #F0EBE3; color:var(--muted); font-size:.95rem; }
+  .price-card li:before { content:"✓ "; color:var(--sage); font-weight:700; }
+  .stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:20px; text-align:center; margin:10px 0 20px; }
+  .stat .n { font-family:Georgia,serif; font-size:2.6rem; color:var(--terra); }
+  .stat .l { color:var(--muted); font-size:.92rem; }
+  .form-card { background:#fff; border-radius:20px; padding:44px 40px; box-shadow:0 8px 30px rgba(43,38,32,.08); max-width:720px; margin:0 auto; }
+  .form-row { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .field { margin-bottom:20px; }
+  .field label { display:block; font-weight:600; font-size:.92rem; margin-bottom:7px; }
+  .field input, .field select, .field textarea { width:100%; padding:13px 15px; border:1.5px solid #E4DCCF; border-radius:12px; font-size:1rem; font-family:inherit; background:var(--cream); }
+  .field input:focus, .field select:focus, .field textarea:focus { outline:none; border-color:var(--terra); }
+  .field textarea { min-height:130px; resize:vertical; }
+  .fine { font-size:.82rem; color:var(--muted); margin-top:14px; text-align:center; }
+  .fine a { color:var(--terra); }
+  footer { border-top:1px solid #E8E2D8; padding:32px 0; text-align:center; color:var(--muted); font-size:.88rem; }
+  footer a { color:var(--terra); text-decoration:none; margin:0 10px; }
+  @media(max-width:640px){ .form-row{grid-template-columns:1fr;} .hero h1{font-size:2.2rem;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="index.html">Real Scripture Path <span>Inc.</span></a>
+    <nav>
+      <a href="#apps">Our Apps</a>
+      <a href="#services">Services</a>
+      <a href="#request">Request a Build</a>
+    </nav>
+  </header>
+</div>
+
+<div class="hero">
+  <div class="kicker">Professional App Studio</div>
+  <h1>Your idea. Our craft.<br><em>On the App Store in weeks.</em></h1>
+  <p>We're Real Scripture Path Inc. — a studio that designs, builds, and launches iPhone apps. Our own apps serve thousands. Now we build for you.</p>
+  <a class="btn" href="#request">Request Your App</a>
+  <a class="btn ghost" href="#apps">See Our Work</a>
+</div>
+
+<div class="wrap">
+<section>
+  <div class="stats">
+    <div class="stat"><div class="n">4</div><div class="l">Apps in portfolio</div></div>
+    <div class="stat"><div class="n">100%</div><div class="l">App Store approval rate</div></div>
+    <div class="stat"><div class="n">Weeks</div><div class="l">Not months, to launch</div></div>
+    <div class="stat"><div class="n">1</div><div class="l">Team obsessed with quality</div></div>
+  </div>
+</section>
+
+<section id="apps">
+  <h2>Our Apps</h2>
+  <p class="sub">Proof we ship. Every app below was designed, built, and launched by our studio.</p>
+  <div class="grid">
+    <div class="card"><span class="tag live">Live on the App Store</span><h3>Scripture Path</h3><p>Complete Bible-study companion — 28 translations, audio Bible, devotionals, prayer community, church finder.</p></div>
+    <div class="card"><span class="tag live">Live on the App Store</span><h3>Resale Scanner</h3><p>Scan any product, get an instant buy-or-skip verdict with real profit numbers. Built for resellers.</p></div>
+    <div class="card"><span class="tag soon">Launching Soon</span><h3>CareCircle</h3><p>Family caregiving coordination — medications, visits, tasks, notes, and prayer, all in one calm place.</p></div>
+    <div class="card"><span class="tag build">In Development</span><h3>Bible Kids</h3><p>A joyful, safe Bible experience designed for young hearts.</p></div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Simple, Honest Pricing</h2>
+  <p class="sub">No hourly billing. No surprise invoices. Pick the package that fits.</p>
+  <div class="grid">
+    <div class="card price-card">
+      <span class="tag build">Most Popular</span>
+      <h3>MVP App</h3>
+      <div class="price">$9,800</div><div class="per">fixed price · 4–6 weeks</div>
+      <ul><li>Custom iPhone app, your branding</li><li>Core features, polished design</li><li>App Store submission handled</li><li>Beta testing via TestFlight</li></ul>
+      <a class="btn" href="#request">Start Your MVP</a>
+    </div>
+    <div class="card price-card">
+      <span class="tag live">Full Product</span>
+      <h3>Complete Build</h3>
+      <div class="price">$24,000</div><div class="per">fixed price · 8–12 weeks</div>
+      <ul><li>Everything in MVP, plus:</li><li>Cloud backend &amp; data sync</li><li>Push notifications &amp; integrations</li><li>Subscriptions &amp; payments</li><li>Launch support</li></ul>
+      <a class="btn" href="#request">Build It Right</a>
+    </div>
+    <div class="card price-card">
+      <span class="tag soon">Ongoing</span>
+      <h3>Care Plan</h3>
+      <div class="price">$490<span style="font-size:1.2rem">/mo</span></div><div class="per">cancel anytime</div>
+      <ul><li>iOS updates &amp; compatibility</li><li>Hosting &amp; monitoring</li><li>Priority support</li><li>Monthly improvements</li></ul>
+      <a class="btn" href="#request">Stay Covered</a>
+    </div>
+  </div>
+</section>
+
+<section id="request">
+  <h2>Request Your App</h2>
+  <p class="sub">Tell us about your project. We reply within one business day.</p>
+  <div class="form-card">
+    <form action="https://formsubmit.co/fabrod035@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New App Project Request — Real Scripture Path Inc.">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <div class="form-row">
+        <div class="field"><label>Your Name *</label><input type="text" name="name" required placeholder="Jane Smith"></div>
+        <div class="field"><label>Email *</label><input type="email" name="email" required placeholder="jane@company.com"></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label>Company / Organization</label><input type="text" name="company" placeholder="Acme Church"></div>
+        <div class="field"><label>Package *</label>
+          <select name="package" required>
+            <option value="">Select…</option>
+            <option>MVP App — from $9,800</option>
+            <option>Complete Build — from $24,000</option>
+            <option>Care Plan — $490/mo</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+      </div>
+      <div class="field"><label>Describe Your App Idea *</label><textarea name="idea" required placeholder="What should the app do? Who is it for? What problem does it solve?"></textarea></div>
+      <div class="field"><label>Target Launch Date</label><input type="text" name="timeline" placeholder="e.g. Easter 2027, Q3, ASAP"></div>
+      <button class="btn" type="submit" style="width:100%">Send Request →</button>
+      <p class="fine">By submitting, you agree to our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+    </form>
+  </div>
+</section>
+</div>
+
+<footer>
+  <div class="wrap">
+    © 2026 Real Scripture Path Inc. · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a href="mailto:fabrod035@gmail.com">Contact</a>
+  </div>
+</footer>
+</body>
+</html>
